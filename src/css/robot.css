@@ -138,3 +138,48 @@
     color: black;
     border: none;
 }
+
+// ========================== nav and its Buttons ==============
+
+
+.nav {
+    background-color: black;
+    min-height: 100vh;
+    width: 0%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition-duration: 0.4s;
+    transition-property: width;
+}
+
+.nav_button,
+.learn_button {
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.twitter {
+    background-color: rgb(18, 166, 229)
+}
+
+.instagram {
+    background-color: rgb(138, 58, 185),
+}
+
+.github {
+    background-color: yellow
+}
+
+.close {
+    background-color: crimson
+}
