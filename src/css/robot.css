@@ -5,46 +5,86 @@
 }
 
 .body {
-    background-color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
-    font-size: 100%;
+    width: 100%;
+    overflow-x: hidden;
     line-height: 45px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
     color: white;
 }
 
 .header {
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    max-width: 100%;
+    color: white;
 }
 
-.header h1 {
-    margin-left: 10px;
+.header>h1 {
+    margin-left: 10px
 }
 
 .menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-right: 10px;
-
 }
 
 .menu>hr {
-    width: 40px;
     height: 4px;
-    margin: 4px;
+    width: 35px;
     border: none;
     background-color: white;
+    margin: 3px;
 }
 
+.nav {
+    background-color: black;
+    min-height: 100vh;
+    width: 0%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition-duration: 0.4s;
+    transition-property: width;
+}
+
+.nav_button,
+.learn_button {
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.twitter {
+    background-color: rgb(18, 166, 229)
+}
+.instagram {
+    background-color: #f20084; color:black;
+}
+
+.github {
+    background-color: yellow
+}
+
+.close {
+    background-color: crimson
+}
+// ===============
 .article {
     min-height: 100vh;
     display: flex;
@@ -126,48 +166,3 @@
     border: none;
 }
 
-// ========================== nav and its Buttons ==============
-
-
-.nav {
-    background-color: black;
-    min-height: 100vh;
-    width: 0%;
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    transition-duration: 0.4s;
-    transition-property: width;
-}
-
-.nav_button,
-{
-    margin: 5px;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
-}
-
-.twitter {
-    background-color: rgb(18, 166, 229)
-}
-
-
-.instagram {
-    background-color: #f20084; color:black;
-}
-
-.github {
-    background-color: yellow
-}
-
-.close {
-    background-color: crimson
-}
